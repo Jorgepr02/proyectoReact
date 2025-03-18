@@ -1,4 +1,32 @@
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import Home from "./pages/Home";
+import Products from "./pages/Products";
+import ProductDetail from "./pages/ProductDetail";
+import Cart from "./pages/Cart";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 import AdminPanel from "./pages/AdminPanel";
+import { useAuth } from "./context/AuthContext";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+
+const AuthRoute = ({ children }) => {
+  const { user, loading } = useAuth();
+
+  if (loading) return null; // Espera hasta que Firebase verifique la autenticación
+
+  return user ? <Navigate to="/" /> : children;
+};
+
+const PrivateRoute = ({ children }) => {
+  const { user } = useAuth();
+  return user ? children : <Navigate to="/login" />;
+};
+
+const AdminRoute = ({ children }) => {
+  const { user } = useAuth();
+  return user && user.email === "admin@tienda.com" ? children : <Navigate to="/" />;
+};
 
 const AppRoutes = () => {
   return (
