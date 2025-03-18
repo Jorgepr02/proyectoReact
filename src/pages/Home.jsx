@@ -1,13 +1,22 @@
 import { useProducts } from "../context/ProductContext";
 import ProductCard from "../components/ProductCard";
+import loadingGif from "../assets/skigif.gif"; 
+
 
 const Home = () => {
   const { products, loading } = useProducts();
   const featuredProducts = products.slice(0, 5);
 
   if (loading) {
-    return <p className="text-center text-gray-500">Cargando productos...</p>;
-  }
+    return (
+      <div className="flex justify-center items-center h-64">
+        <img 
+          src={loadingGif}  
+          alt="Cargando..." 
+          className="w-32 h-32" 
+        />
+      </div>
+    );  }
 
   return (
     <div className="container mx-auto p-4">
