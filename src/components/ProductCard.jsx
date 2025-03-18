@@ -8,7 +8,6 @@ const ProductCard = ({ product }) => {
       <img src={`http://localhost:5000${product.image}`} alt={product.title} className="w-full h-40 object-cover" />
       <h3 className="text-lg">{product.title}</h3>
       <p className="text-gray-600">${product.price}</p>
-      <p className="text-gray-600">{product.description}</p>
       {product.id ? (
         <Link to={`/product/${product.id}`} className="text-blue-500">
           Ver detalles

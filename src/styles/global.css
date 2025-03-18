@@ -34,7 +34,7 @@ body::before {
     0,
     0,
     0,
-    0.45
+    0.55
   ); /* Oscurece con una capa negra semitransparente */
   z-index: -1;
 }
