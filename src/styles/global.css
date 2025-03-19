@@ -23,6 +23,7 @@ body {
   background-attachment: fixed;
 }
 
+/* Oscurece el fondo */
 body::before {
   content: "";
   position: fixed;
@@ -35,6 +36,6 @@ body::before {
     0,
     0,
     0.7
-  ); /* Oscurece con una capa negra semitransparente */
+  ); 
   z-index: -1;
 }

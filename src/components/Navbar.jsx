@@ -21,17 +21,15 @@ const Navbar = () => {
 
   return (
     <nav className="bg-gray-800 text-white py-3 px-6 flex items-center shadow-md sticky top-0 z-50">
-      {/* Logo y búsqueda juntos a la izquierda */}
       <div className="flex items-center">
         <Link to="/" className="flex-shrink-0">
           <img 
             src={logo} 
             alt="Logo de la Tienda" 
-            className="h-10" 
+            className="h-8 sm:h-10 mr-4" 
           />
         </Link>
         
-        {/* Formulario de búsqueda justo al lado del logo */}
         <form onSubmit={handleSearch} className="hidden md:flex ml-10 max-w-xs">
           <div className="relative flex overflow-hidden rounded-full">
             <input
@@ -51,8 +49,7 @@ const Navbar = () => {
         </form>
       </div>
       
-      {/* Navegación y usuario a la derecha */}
-      <div className="flex items-center gap-6 ml-auto">
+      <div className="flex items-center gap-4 sm:gap-6 ml-auto">
         <Link to="/products" className="hover:text-blue-300 transition-colors font-medium">
           Productos
         </Link>

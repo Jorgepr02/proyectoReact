@@ -19,7 +19,7 @@ export const AuthProvider = ({ children }) => {
 
   const logout = async () => {
     await signOut(auth);
-    setUser(null); // ✅ Actualizar estado manualmente
+    setUser(null); // Actualizar estado manualmente
   };
 
   return (

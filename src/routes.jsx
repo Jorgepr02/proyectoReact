@@ -5,7 +5,6 @@ import ProductDetail from "./pages/ProductDetail";
 import Cart from "./pages/Cart";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
-import AdminPanel from "./pages/AdminPanel";
 import { useAuth } from "./context/AuthContext";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -56,16 +55,6 @@ const AppRoutes = () => {
               <PrivateRoute>
                 <Cart />
               </PrivateRoute>
-            }
-          />
-
-          {/* Ruta de administrador (solo para el admin) */}
-          <Route
-            path="/admin"
-            element={
-              <AdminRoute>
-                <AdminPanel />
-              </AdminRoute>
             }
           />
 

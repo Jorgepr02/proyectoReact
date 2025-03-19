@@ -27,7 +27,7 @@ const Products = () => {
   }, []);
 
   useEffect(() => {
-    // Obtener el término de búsqueda de los parámetros de URL
+    // Obtener el término de búsqueda de los parámetros de la URL
     const searchParams = new URLSearchParams(location.search);
     const searchTerm = searchParams.get("search");
     
