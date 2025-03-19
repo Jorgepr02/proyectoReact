@@ -52,7 +52,7 @@ El proyecto utiliza un servidor Express para gestionar las imágenes de los prod
 npm install
 
 # Iniciar el servidor
-npm start
+npm start server.js
 ```
 
 El servidor se iniciará en `http://localhost:5000`.
