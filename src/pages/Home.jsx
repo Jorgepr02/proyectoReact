@@ -5,7 +5,7 @@ import loadingGif from "../assets/skigif.gif";
 
 const Home = () => {
   const { products, loading } = useProducts();
-  const featuredProducts = products.slice(0, 5);
+  const featuredProducts = products.slice(0, 8);
 
   if (loading) {
     return (

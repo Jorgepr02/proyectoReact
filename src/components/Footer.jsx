@@ -13,7 +13,7 @@ const Footer = () => {
   const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
 
   return (
-    <footer className="bg-gray-800 text-white py-6 px-6 mt-auto">
+    <footer className="bg-gray-800/65 text-white py-6 px-6 mt-auto">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
         {/* Logo */}
         <div className="mb-4 md:mb-0">
