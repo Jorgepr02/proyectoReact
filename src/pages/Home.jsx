@@ -1,7 +1,6 @@
 import { useProducts } from "../context/ProductContext";
 import ProductCard from "../components/ProductCard";
-import loadingGif from "../assets/skigif.gif"; 
-
+import loadingGif from "../assets/skigif.gif";
 
 const Home = () => {
   const { products, loading } = useProducts();

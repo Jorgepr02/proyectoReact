@@ -5,6 +5,7 @@ import { useCart } from "../context/CartContext";
 import { useAuth } from "../context/AuthContext";
 import { toast } from "react-toastify";
 import { FiShoppingCart, FiLock } from "react-icons/fi";
+import loadingGif from "../assets/skigif.gif";
 
 const ProductDetail = () => {
   const { id } = useParams();
@@ -44,12 +45,15 @@ const ProductDetail = () => {
   };
 
   if (loading) {
-    return (
-      <div className="flex justify-center items-center h-64">
-        <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500"></div>
-      </div>
-    );
-  }
+      return (
+        <div className="flex justify-center items-center h-64">
+          <img 
+            src={loadingGif}  
+            alt="Cargando..." 
+            className="w-32 h-32" 
+          />
+        </div>
+      );  }
   
   if (!product) return <p className="text-center text-red-500">Producto no encontrado</p>;
 
