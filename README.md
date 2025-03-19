@@ -74,20 +74,7 @@ La aplicación React se ejecutará en `http://localhost:5173`.
 
 ### 4. Configuración de Firebase
 
-Para conectar la aplicación con Firebase, necesitas crear un proyecto en Firebase y obtener las credenciales:
-
-1. Ve a [Firebase Console](https://console.firebase.google.com/)
-2. Crea un nuevo proyecto
-3. Agrega una aplicación web a tu proyecto Firebase
-4. Copia las credenciales en el archivo firebaseConfig.js:
-5. Activa los servicios necesarios en Firebase:
-   - Authentication: Email/Password y Google
-   - Firestore Database: Crea una colección `products` y `cart`
-   - Storage: Para imágenes de productos
-
-6. Configura las reglas de Firestore y Storage:
-   - Copia las reglas de firestore.rules a tus reglas de Firestore
-   - Copia las reglas de storage.rules a tus reglas de Storage
+Las credenciales ya están puestas en el archivo firebaseConfig.js
 
 ## Uso de la Aplicación
 
@@ -103,7 +90,3 @@ Para cualquier consulta relacionada con la instalación o configuración de la a
 - **Desarrollador**: Jorge Pampín Ríos
 - **Email**: jorgepampinrios02@liceolapaz.net
 - **GitHub**: [Jorgepr02](https://github.com/Jorgepr02)
-
-## Licencia
-
-Este proyecto está licenciado bajo la Licencia MIT - ver el archivo LICENSE para más detalles.
