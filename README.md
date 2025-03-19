@@ -40,8 +40,7 @@ Antes de instalar el proyecto, necesitarás tener instalado:
 ### 1. Clonar el Repositorio
 
 ```bash
-git clone https://github.com/jorgepr-dev/snow-shop.git
-cd snow-shop
+git clone https://github.com/Jorgepr02/proyectoReact.git
 ```
 
 ### 2. Configurar el Servidor de Imágenes
@@ -83,37 +82,12 @@ Para conectar la aplicación con Firebase, necesitas crear un proyecto en Fireba
 4. Copia las credenciales en el archivo firebaseConfig.js:
 5. Activa los servicios necesarios en Firebase:
    - Authentication: Email/Password y Google
-   - Firestore Database: Crea una colección `products` y `users`
+   - Firestore Database: Crea una colección `products` y `cart`
    - Storage: Para imágenes de productos
 
 6. Configura las reglas de Firestore y Storage:
    - Copia las reglas de firestore.rules a tus reglas de Firestore
    - Copia las reglas de storage.rules a tus reglas de Storage
-
-## Estructura del Proyecto
-
-```
-proyectoReact/
-├── public/              # Archivos estáticos
-├── src/
-│   ├── api/             # Conexiones con Firebase y API
-│   ├── assets/          # Imágenes y recursos
-│   ├── components/      # Componentes reutilizables
-│   ├── context/         # Contextos de React (Auth, Cart, Products)
-│   ├── firebase/        # Configuración y reglas de Firebase
-│   ├── pages/           # Páginas principales
-│   ├── styles/          # Estilos globales
-│   ├── App.jsx          # Componente principal
-│   ├── main.jsx         # Punto de entrada
-│   └── routes.jsx       # Configuración de rutas
-├── index.html           # HTML principal
-├── tailwind.config.js   # Configuración de Tailwind CSS
-├── package.json         # Dependencias y scripts
-└── vite.config.js       # Configuración de Vite
-
-uploads/                # Directorio de imágenes subidas (servidor)
-server.js               # Servidor Express para imágenes
-```
 
 ## Uso de la Aplicación
 
@@ -127,8 +101,8 @@ server.js               # Servidor Express para imágenes
 
 Para cualquier consulta relacionada con la instalación o configuración de la aplicación:
 - **Desarrollador**: Jorge Pampín Ríos
-- **Email**: jorge.pampin@example.com
-- **GitHub**: [jorgepr-dev](https://github.com/jorgepr-dev)
+- **Email**: jorgepampinrios02@liceolapaz.net
+- **GitHub**: [Jorgepr02](https://github.com/Jorgepr02)
 
 ## Licencia
 
