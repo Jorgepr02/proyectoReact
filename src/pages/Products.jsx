@@ -34,10 +34,12 @@ const Products = () => {
     // Aplicar filtros (búsqueda + categoría)
     let filtered = [...products];
     
-    // Filtrar por término de búsqueda
+    // Filtrar por término de búsqueda (MODIFICADO - INCLUYE DESCRIPCIÓN)
     if (searchTerm) {
+      const searchTermLower = searchTerm.toLowerCase();
       filtered = filtered.filter(product => 
-        product.title.toLowerCase().includes(searchTerm.toLowerCase())
+        product.title.toLowerCase().includes(searchTermLower) || 
+        product.description.toLowerCase().includes(searchTermLower)
       );
     }
     
